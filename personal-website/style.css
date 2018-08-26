@@ -1,4 +1,6 @@
-
+body{
+    margin: 0 0 0 0;
+}
 
 .container{
     display: grid;
@@ -9,18 +11,27 @@
     grid-auto-flow: column dense;
     grid-gap: 12px;
     font-family: sans-serif;
+    align-items: center;
+    justify-items: center;
+    justify-content: space-evenly;
+   
 }
 header{
     grid-area: header;
     text-align: center;
+    
 }
 .navi{
     grid-area: navi;
     text-align: center;
+
     
 }
 .navi a{
     padding: 0px 40px;
+    text-decoration: none;
+    
+
 }
 
 main{
@@ -34,9 +45,17 @@ footer{
 
 .twitter{
     grid-area: right;
-    justify-items: stretch;
-    align-items: stretch;
+    justify-self: stretch;
+    align-self: stretch;
     max-height: 700px;
     overflow: scroll;
     text-align: center;
+}
+
+h3{
+    padding: 20px;
+    border-style: solid;
+    border-color: black;
+    border-left: 0px;
+    border-right: 0px;
 }
