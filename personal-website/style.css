@@ -14,12 +14,12 @@ body{
     align-items: center;
     justify-items: center;
     justify-content: space-evenly;
-   
 }
+
 header{
     grid-area: header;
     text-align: center;
-    
+   
 }
 .navi{
     grid-area: navi;
