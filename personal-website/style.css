@@ -1,3 +1,42 @@
-header, main, footer{
-font-family: sans-serif
+
+
+.container{
+    display: grid;
+    grid-template-areas: "header header header" "navi navi navi" "left content right" "footer footer footer";
+    grid-template-columns: 0.5fr 6.5fr 3fr;
+    grid-template-rows: 135px 50px 80% 50px;
+    grid-auto-rows: 480px;
+    grid-auto-flow: column dense;
+    grid-gap: 12px;
+    font-family: sans-serif;
+}
+header{
+    grid-area: header;
+    text-align: center;
+}
+.navi{
+    grid-area: navi;
+    text-align: center;
+    
+}
+.navi a{
+    padding: 0px 40px;
+}
+
+main{
+    grid-area: content;
+}
+
+footer{
+    grid-area: footer;
+    text-align: center;
+}
+
+.twitter{
+    grid-area: right;
+    justify-items: stretch;
+    align-items: stretch;
+    max-height: 700px;
+    overflow: scroll;
+    text-align: center;
 }
